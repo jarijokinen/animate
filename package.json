@@ -1,0 +1,16 @@
+{
+  "name": "@jarijokinen/animate",
+  "version": "0.0.1",
+  "description": "A zero-dependency, vanilla JavaScript library for animating elements when they appear in the viewport.",
+  "main": "src/animate.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jarijokinen/animate.git"
+  },
+  "author": "Jari Jokinen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jarijokinen/animate/issues"
+  },
+  "homepage": "https://github.com/jarijokinen/animate#readme"
+}
