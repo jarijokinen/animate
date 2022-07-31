@@ -30,6 +30,17 @@ Yarn:
 
     animate(options);
 
+## CSS animation class example
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; }
+      50% { opacity: 0; transform: translateY(80px); }
+      100% { opacity: 1; transform: translateY(0px);  }
+    }
+    .fade-in-up {
+      animation: fadeInUp 500ms ease-in-out;
+    }
+
 ## License
 
 MIT License. Copyright (c) 2022 [Jari Jokinen](https://jarijokinen.com).  See
