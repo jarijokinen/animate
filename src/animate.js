@@ -2,6 +2,9 @@ export const animate = (options) => {
   const opts = {
     elements: document.querySelectorAll('.animate'),
     class: 'fade-in-up',
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.0,
     ...options
   };
 
@@ -15,7 +18,11 @@ export const animate = (options) => {
   };
 
   opts.elements.forEach((el) => {
-    const observer = new IntersectionObserver(callback);
+    const observer = new IntersectionObserver(callback, {
+      root: opts.root,
+      rootMargin: opts.rootMargin,
+      threshold: opts.threshold
+    });
     observer.observe(el);
   });
 };

@@ -25,7 +25,10 @@ Yarn:
 
     const options = {
       elements: document.querySelectorAll('.animate'),
-      class: 'fade-in-up'
+      class: 'fade-in-up',
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.0
     };
 
     animate(options);
@@ -33,12 +36,18 @@ Yarn:
 ## CSS animation class example
 
     @keyframes fadeInUp {
-      0% { opacity: 0; }
-      50% { opacity: 0; transform: translateY(80px); }
-      100% { opacity: 1; transform: translateY(0px);  }
+      from {
+        opacity: 0;
+        transform: translate3d(0, 80px, 0); 
+      }
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0); 
+      }
     }
     .fade-in-up {
       animation: fadeInUp 500ms ease-in-out;
+      animation-fill-mode: both;
     }
 
 ## License

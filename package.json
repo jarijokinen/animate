@@ -1,6 +1,6 @@
 {
   "name": "@jarijokinen/animate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A zero-dependency, vanilla JavaScript library for animating elements when they appear in the viewport.",
   "main": "src/animate.js",
   "repository": {
